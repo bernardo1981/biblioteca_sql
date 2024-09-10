@@ -1,0 +1,16 @@
+-- Insertar datos en Autores
+INSERT INTO Autores (Nombre, Nacionalidad) VALUES
+('Gabriel García Márquez', 'Colombiano'),
+('J.K. Rowling', 'Británica'),
+('Miguel de Cervantes', 'Español');
+
+-- Insertar datos en Libros
+INSERT INTO Libros (Titulo, AutorID, FechaPublicacion) VALUES
+('Cien años de soledad', 1, '1967-06-05'),
+('Harry Potter y la piedra filosofal', 2, '1997-06-26'),
+('Don Quijote de la Mancha', 3, '1605-01-16');
+
+-- Insertar datos en Préstamos
+INSERT INTO Prestamos (LibroID, FechaPrestamo, FechaDevolucion) VALUES
+(1, '2024-08-01', '2024-08-15'),
+(2, '2024-08-10', NULL); -- NULL indica que el libro no ha sido devuelto aún
